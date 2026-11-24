@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+/* Clinical instrument type system */
+html {
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11", "ss01";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Soft selection for clinical calm */
+::selection {
+  background: #D9B8EB;
+  color: #23202A;
+}
+
+/* Tabular nums everywhere for clinical data */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Subtle scrollbar for ledger */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #C8C0D8;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A89EBC;
+}
+
+/* Soft pulse for pending 2H follow-up */
+@keyframes soft-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.72; }
+}
+.animate-soft-pulse {
+  animation: soft-pulse 2.4s ease-in-out infinite;
+}
