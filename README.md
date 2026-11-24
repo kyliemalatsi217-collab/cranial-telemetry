@@ -41,3 +41,4 @@ Open the URL Vite prints (usually http://localhost:5173).
 
 Built for real-world tracking — gentle on the eyes, precise on the data.
 # cranial-telemetry
+# cranial-telemetry
